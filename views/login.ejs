@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack | Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/blackjack-icon.png">
+    <link rel="stylesheet" href="css/loginstyle.css" type="text/css">
+</head>
+<body>
+<form class="box" action="/login" method="POST">
+    <h1>Login</h1>
+    <% if(messages.error) { %>
+        <%= messages.error %>
+    <% } %>
+    <input type="email" id="email" name="email" required placeholder="Email">
+    <input type="password" id="password" name="password" required placeholder="Password">
+    <button type="submit">Login</button>
+    <a href="/register">Sign In</a>
+</form>
+</body>
+</html>

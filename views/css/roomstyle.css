@@ -1,0 +1,140 @@
+.chat{
+    width: 90%;
+    color: white;
+    height: 600px;
+    background-color: rgba(23,33,33,0.67);
+    overflow: auto;
+}
+
+.main-body {
+    margin-top: 10px;
+    margin-right: 20px;
+    display: flex;
+}
+
+.chat-body{
+    width: 20%;
+    margin-left: 20px;
+}
+
+.chat-area {
+    margin-top: 10px;
+}
+
+#message-container div {
+    padding: 5px;
+}
+
+#send-container {
+    padding-bottom: 30px;
+    bottom: 0;
+    width: 90%;
+}
+
+#message-input{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 150px;
+}
+
+#send-button{
+    background-color: #4c70af;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:10px;
+}
+
+.game{
+    width: 80%;
+    height: 87vh;
+    background-color: rgba(23,33,33,0.67);
+}
+
+.game h2{
+    color: white;
+    text-align: center;
+}
+
+#dealer-cards {
+    width: 80%;
+    height:20%;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+}
+
+#timer {
+    width: 80%;
+    height:25%;
+    margin: 0 auto;
+    color: white;
+    text-align:center;
+    padding-top: 20px;
+}
+
+#player-cards{
+    width: 80%;
+    height:20%;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+}
+
+#actions-menu{
+    height:25%;
+    width: 80%;
+    color: white;
+    display: flex;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+#winner-table{
+    text-align: center;
+    width: 80%;
+}
+
+#next {
+    background-color: #314fbf;
+    border: none;
+    color: white;
+    padding: 20px;
+    height: 150px;
+    width:150px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#next:hover{
+    background-color: #1d3eb3;
+}
+
+.card{
+    width: 100px;
+    height: 150px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 7px;
+}
+
+.hideCard{
+    width: 100px;
+    height: 150px;
+    background-color: #6d6d6d;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 7px;
+}

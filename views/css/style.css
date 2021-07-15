@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.horizontal-menu{
+    font-size: 20px;
+}
+
+.menu{
+    width: 20%;
+    padding: 10px;
+    background-color: rgba(23, 33, 33, 0.85);
+}
+
+.menu input{
+    width: 100%;
+    border-radius: 4px;
+    height: 32px;
+    font-size: 24px;
+}
+
+.menu button{
+    background-color: #4c70af;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:10px;
+}
+
+body {
+    color: white;
+    background: url("../img/blackjack-background.png") no-repeat;
+}
+
+.user-info {
+    color: white;
+    width: 100%;
+    min-width: 100%;
+    margin-top: 8px;
+    display: flex;
+}
+
+.user-info button{
+    margin-left: 10px;
+    position: absolute;
+    right: 20px;
+}
+
+.user-info p{
+    position: absolute;
+    right: 120px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 991px) {
+    .user-info{
+        display: block;
+        height: 100px;
+    }
+    .user-info p, button {
+        position: relative;
+        left: 0;
+    }
+}
+
+.index-body{
+    display: flex;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.room-viewer{
+    width: 80%;
+    padding: 5px;
+    background-color: rgba(23, 33, 33, 0.85);
+    overflow: auto;
+    height: 87vh;
+    margin-left: 5px;
+    text-align: center;
+    color: white;
+}
+
+#room-container a{
+    text-decoration: none;
+    margin: auto 0;
+    font-size: 24px;
+    color: white;
+}
+
+#room-container a:hover{
+    color: #a1a1a1;
+}
+
+.room-style{
+    margin-top: 10px;
+    border-bottom: 1px solid white;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.rules{
+    width: 95%;
+    margin: 10px auto 0 auto;
+    background-color: rgba(23,33,33,0.67);
+    height: 87vh;
+    color: white;
+}
+
+.rules h1{
+    text-align: center;
+}
+
+.rules p{
+    margin-left: 10px;
+    font-size: 24px;
+}

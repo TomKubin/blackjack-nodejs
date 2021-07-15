@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/blackjack-icon.png">
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <script src="js/bootstrap.min.js"></script>
+    <script>on_index = false;</script>
+</head>
+<body>
+<div class="horizontal-menu">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/"><img src="img/blackjack-icon.png" style="width:70px; height: 70px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="/rules">Rules</a>
+                <form class="user-info" action="/logout?_method=DELETE" method="POST">
+                    <p class="nav-item">User: <%= name %> | Money: <%= money %>$</p>
+                    <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Sign Out</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="rules">
+    <h1>Rules</h1>
+    <p>1. Each player receives 2 cards at the beginning of the game</p>
+    <p>2. A player may take another card during the game to have more points than the dealer, but may not exceed 21 points</p>
+    <p>3. More players = more money to win</p>
+</div>
+</body>
+</html>
